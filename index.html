@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Changer App</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="UBC-OSOT-LOGO.png" alt="UBC OSOT Logo" class="logo">
+    <div class="tab-container">
+        <button class="tab-button" id="tab-vancouver">Teaching in Vancouver</button>
+        <button class="tab-button" id="tab-princegeorge">Teaching in Prince George</button>
+        <button class="tab-button" id="tab-fraservalley">Teaching in Fraser Valley</button>
+    </div>
+    <div class="content-container">
+        <div class="square-container top">
+            <h2 id="title-n"></h2>
+            <div id="square-n" class="square"></div>
+            <select class="color-options" id="color-options-n">
+                <option value="white">No Question</option>
+                <option value="yellow">Non-urgent Question</option>
+                <option value="orange">Urgent Question</option>
+            </select>
+            <button class="set-color-button" id="set-color-button-n">Send Signal</button>
+        </div>
+        <div class="square-container top">
+            <h2 id="title-fv"></h2>
+            <div id="square-fv" class="square"></div>
+            <select class="color-options" id="color-options-fv">
+                <option value="white">No Question</option>
+                <option value="green">Non-urgent Question</option>
+                <option value="blue">Urgent Question</option>
+            </select>
+            <button class="set-color-button" id="set-color-button-fv">Send Signal</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
